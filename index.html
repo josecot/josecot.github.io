@@ -1,3 +1,554 @@
-<a href="assets/cv.pdf" target="_blank">
-    Descargar CV
-</a>
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Portfolio de José Alonso Cotrina Gil - Ingeniero de Sistemas y Analista Programador especializado en C#, .NET y SQL Server.">
+
+    <title>José Alonso Cotrina Gil | Analista Programador</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="container nav-container">
+
+            <a href="#inicio" class="logo">
+                <span>&lt;</span>JAC<span>/&gt;</span>
+            </a>
+
+            <nav id="nav-menu">
+                <a href="#inicio">Inicio</a>
+                <a href="#sobre-mi">Sobre mí</a>
+                <a href="#experiencia">Experiencia</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+                <i data-lucide="menu"></i>
+            </button>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- HERO -->
+        <section id="inicio" class="hero">
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <p class="eyebrow">
+                        <span class="status-dot"></span>
+                        Disponible para oportunidades
+                    </p>
+
+                    <h1>
+                        Hola, soy<br>
+                        <span>José Alonso</span>
+                    </h1>
+
+                    <h2>Analista Programador | C# / .NET / SQL Server</h2>
+
+                    <p class="hero-description">
+                        Ingeniero de Sistemas y Computación con más de 5 años
+                        de experiencia desarrollando, manteniendo y optimizando
+                        soluciones de software empresariales.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#proyectos" class="btn btn-primary">
+                            Ver proyectos
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+
+                        <a href="assets/cv.pdf" target="_blank" class="btn btn-secondary">
+                            Descargar CV
+                            <i data-lucide="download"></i>
+                        </a>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://github.com/josecot" target="_blank" aria-label="GitHub">
+                            <i data-lucide="github"></i>
+                        </a>
+
+                        <!-- Reemplazar este enlace por tu LinkedIn -->
+                        <a href="#" aria-label="LinkedIn">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+
+                        <!-- Reemplazar este enlace por tu correo -->
+                        <a href="mailto:TU_CORREO" aria-label="Correo">
+                            <i data-lucide="mail"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="hero-card">
+
+                    <div class="code-window">
+
+                        <div class="window-header">
+                            <div class="window-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <span>developer.cs</span>
+                        </div>
+
+                        <div class="code-content">
+<pre><code><span class="keyword">public class</span> <span class="class-name">Developer</span>
+{
+    <span class="keyword">public string</span> Name
+        => <span class="string">"José Alonso"</span>;
+
+    <span class="keyword">public string[]</span> Skills
+        => <span class="keyword">new</span>[]
+        {
+            <span class="string">"C#"</span>,
+            <span class="string">".NET"</span>,
+            <span class="string">"SQL Server"</span>,
+            <span class="string">"ASP.NET MVC"</span>
+        };
+
+    <span class="keyword">public string</span> Focus
+        => <span class="string">"Software Development"</span>;
+}</code></pre>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- SOBRE MI -->
+        <section id="sobre-mi" class="section">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span>01</span>
+                    <h2>Sobre mí</h2>
+                </div>
+
+                <div class="about-grid">
+
+                    <div class="about-text">
+
+                        <h3>Construyo soluciones que ayudan a las empresas a trabajar mejor.</h3>
+
+                        <p>
+                            Soy Ingeniero de Sistemas y Computación y Analista Programador
+                            con más de cinco años de experiencia profesional en el desarrollo
+                            de soluciones de software empresariales.
+                        </p>
+
+                        <p>
+                            He participado en diferentes etapas del ciclo de desarrollo:
+                            análisis de requerimientos, diseño, programación, pruebas,
+                            implementación, mantenimiento y soporte.
+                        </p>
+
+                        <p>
+                            Mi experiencia se centra principalmente en el ecosistema
+                            <strong>C# / .NET</strong>, desarrollo web y
+                            <strong>SQL Server</strong>.
+                        </p>
+
+                    </div>
+
+                    <div class="about-stats">
+
+                        <div class="stat-card">
+                            <strong>5+</strong>
+                            <span>Años de experiencia</span>
+                        </div>
+
+                        <div class="stat-card">
+                            <strong>C#</strong>
+                            <span>Tecnología principal</span>
+                        </div>
+
+                        <div class="stat-card">
+                            <strong>.NET</strong>
+                            <span>Desarrollo web</span>
+                        </div>
+
+                        <div class="stat-card">
+                            <strong>SQL</strong>
+                            <span>Bases de datos</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- TECNOLOGIAS -->
+        <section class="section section-dark">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span>02</span>
+                    <h2>Tecnologías</h2>
+                </div>
+
+                <div class="tech-grid">
+
+                    <div class="tech-card">
+                        <i data-lucide="code-2"></i>
+                        <h3>C#</h3>
+                        <p>Desarrollo de aplicaciones empresariales.</p>
+                    </div>
+
+                    <div class="tech-card">
+                        <i data-lucide="layers"></i>
+                        <h3>ASP.NET MVC</h3>
+                        <p>Desarrollo de aplicaciones web.</p>
+                    </div>
+
+                    <div class="tech-card">
+                        <i data-lucide="server"></i>
+                        <h3>.NET</h3>
+                        <p>.NET Framework y proyectos con .NET 6.</p>
+                    </div>
+
+                    <div class="tech-card">
+                        <i data-lucide="database"></i>
+                        <h3>SQL Server</h3>
+                        <p>Consultas, procedimientos y optimización.</p>
+                    </div>
+
+                    <div class="tech-card">
+                        <i data-lucide="braces"></i>
+                        <h3>Entity Framework</h3>
+                        <p>Acceso y gestión de datos.</p>
+                    </div>
+
+                    <div class="tech-card">
+                        <i data-lucide="globe"></i>
+                        <h3>Web</h3>
+                        <p>HTML, CSS y JavaScript.</p>
+                    </div>
+
+                    <div class="tech-card">
+                        <i data-lucide="file-code-2"></i>
+                        <h3>PHP</h3>
+                        <p>Desarrollo y mantenimiento de aplicaciones.</p>
+                    </div>
+
+                    <div class="tech-card">
+                        <i data-lucide="smartphone"></i>
+                        <h3>Android</h3>
+                        <p>Mantenimiento de aplicaciones móviles.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- EXPERIENCIA -->
+        <section id="experiencia" class="section">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span>03</span>
+                    <h2>Experiencia</h2>
+                </div>
+
+                <div class="timeline">
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-content">
+
+                            <span class="timeline-date">2021 — 2026</span>
+
+                            <h3>Analista Programador</h3>
+
+                            <h4>Viru S.A.</h4>
+
+                            <p>
+                                Desarrollo, mantenimiento y soporte de aplicaciones
+                                empresariales orientadas a diferentes áreas de la organización.
+                            </p>
+
+                            <ul>
+                                <li>Análisis y levantamiento de requerimientos.</li>
+                                <li>Desarrollo de soluciones utilizando C# y ASP.NET MVC.</li>
+                                <li>Trabajo con SQL Server, procedimientos almacenados y consultas.</li>
+                                <li>Desarrollo y mantenimiento de módulos empresariales.</li>
+                                <li>Pruebas, implementación y soporte de aplicaciones.</li>
+                                <li>Optimización de consultas y procesos de base de datos.</li>
+                                <li>Coordinación con áreas de negocio para implementar mejoras.</li>
+                            </ul>
+
+                            <div class="tags">
+                                <span>C#</span>
+                                <span>ASP.NET MVC</span>
+                                <span>.NET</span>
+                                <span>SQL Server</span>
+                                <span>Entity Framework</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- PROYECTOS -->
+        <section id="proyectos" class="section section-dark">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span>04</span>
+                    <h2>Proyectos</h2>
+                </div>
+
+                <p class="section-intro">
+                    Algunos proyectos y soluciones que forman parte de mi experiencia
+                    y desarrollo profesional.
+                </p>
+
+                <div class="projects-grid">
+
+                    <article class="project-card">
+
+                        <div class="project-icon">
+                            <i data-lucide="wallet"></i>
+                        </div>
+
+                        <h3>Sistema de Control de Gastos</h3>
+
+                        <p>
+                            Aplicación web para registrar, controlar y consultar
+                            gastos, con gestión de información y reportes.
+                        </p>
+
+                        <div class="tags">
+                            <span>C#</span>
+                            <span>.NET</span>
+                            <span>SQL Server</span>
+                            <span>Entity Framework</span>
+                        </div>
+
+                    </article>
+
+
+                    <article class="project-card">
+
+                        <div class="project-icon">
+                            <i data-lucide="building-2"></i>
+                        </div>
+
+                        <h3>Sistemas Empresariales</h3>
+
+                        <p>
+                            Desarrollo y mantenimiento de módulos relacionados con
+                            compras, proveedores, logística, clientes, insumos,
+                            contabilidad y control de gastos.
+                        </p>
+
+                        <div class="tags">
+                            <span>C#</span>
+                            <span>ASP.NET MVC</span>
+                            <span>SQL Server</span>
+                        </div>
+
+                    </article>
+
+
+                    <article class="project-card">
+
+                        <div class="project-icon">
+                            <i data-lucide="plug-zap"></i>
+                        </div>
+
+                        <h3>Servicios y APIs</h3>
+
+                        <p>
+                            Desarrollo y mantenimiento de funcionalidades para
+                            intercambio de información entre aplicaciones y
+                            sistemas empresariales.
+                        </p>
+
+                        <div class="tags">
+                            <span>C#</span>
+                            <span>.NET</span>
+                            <span>Web Services</span>
+                            <span>APIs</span>
+                        </div>
+
+                    </article>
+
+
+                    <article class="project-card">
+
+                        <div class="project-icon">
+                            <i data-lucide="smartphone"></i>
+                        </div>
+
+                        <h3>Aplicaciones móviles</h3>
+
+                        <p>
+                            Mantenimiento y actualización de aplicaciones Android
+                            utilizadas para procesos internos y captura de información.
+                        </p>
+
+                        <div class="tags">
+                            <span>Android</span>
+                            <span>SQLite</span>
+                            <span>Volley</span>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- SERVICIOS -->
+        <section id="servicios" class="section">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span>05</span>
+                    <h2>Servicios freelance</h2>
+                </div>
+
+                <div class="services-grid">
+
+                    <div class="service-card">
+                        <i data-lucide="globe-2"></i>
+                        <h3>Desarrollo web</h3>
+                        <p>
+                            Desarrollo de aplicaciones web para negocios y empresas.
+                        </p>
+                    </div>
+
+                    <div class="service-card">
+                        <i data-lucide="wrench"></i>
+                        <h3>Mantenimiento</h3>
+                        <p>
+                            Corrección de errores, mejoras y mantenimiento
+                            de sistemas existentes.
+                        </p>
+                    </div>
+
+                    <div class="service-card">
+                        <i data-lucide="database"></i>
+                        <h3>SQL Server</h3>
+                        <p>
+                            Consultas, procedimientos almacenados,
+                            reportes y optimización.
+                        </p>
+                    </div>
+
+                    <div class="service-card">
+                        <i data-lucide="plug"></i>
+                        <h3>APIs y servicios</h3>
+                        <p>
+                            Desarrollo e integración de APIs y servicios
+                            para sistemas empresariales.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- CONTACTO -->
+        <section id="contacto" class="contact-section">
+            <div class="container contact-content">
+
+                <p class="eyebrow">¿Trabajamos juntos?</p>
+
+                <h2>¿Tienes un proyecto en mente?</h2>
+
+                <p>
+                    Estoy interesado en oportunidades laborales y proyectos
+                    freelance relacionados con desarrollo de software.
+                </p>
+
+                <div class="contact-buttons">
+
+                    <a href="mailto:TU_CORREO" class="btn btn-primary">
+                        Contactarme
+                        <i data-lucide="mail"></i>
+                    </a>
+
+                    <a href="https://github.com/josecot" target="_blank" class="btn btn-secondary">
+                        GitHub
+                        <i data-lucide="github"></i>
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="container footer-content">
+
+            <div>
+                <strong>José Alonso Cotrina Gil</strong>
+                <p>Analista Programador</p>
+            </div>
+
+            <p>
+                © <span id="year"></span> José Alonso. Todos los derechos reservados.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
+
